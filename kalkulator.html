@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+  <style>
+    body {
+      background-color: rgb(255, 255, 255);
+      border-radius: 4px;
+    }
+
+    .navigasi {
+      background-color: rgb(33, 34,78);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: Arial;
+    }
+        
+    .navigasi>h2 {
+      color: crimson;
+      padding-left: 70px;     
+    }
+
+    .navigasi>h2>b>a {
+      text-decoration: none;
+      list-style:none;
+      color: crimson;
+    }
+        
+    .bar {
+      display: flex;
+      align-items: center;
+      color: white;
+      list-style: none;
+      position: relative;
+      right: 40px;
+    }
+
+    .a1 {
+      position: relative;
+      right: 25px;
+    }
+        
+    .a1>a {
+      text-decoration: none;
+      text-transform: none;
+      color: white;
+      padding: 20px;
+    }
+
+    .a1:hover {
+      background-color: rgb(55, 55, 104);
+      height: 30px;
+      border-radius: 5px;
+    }
+        
+    .h1:hover {
+      font-weight: 700;
+      position: relative;
+      top: 5px;
+    }
+        
+    .a2 {
+      height: 30px;
+      border-radius: 5px;
+      position: relative;
+      right: 20px;
+    }
+
+    .a2>a {
+      text-decoration: none;
+      text-transform: none;
+      color: white;
+      padding: 20px;
+      position: relative;
+      top: 6px;
+    }
+
+    .a2:hover {
+      background-color: rgb(55, 55, 104);
+      height: 30px;
+      border-radius: 5px;
+    }
+        
+    .h2:hover {
+      font-weight: 700;
+      position: relative;
+      top: 5px;
+    }
+        
+    .a3 {
+      background-color: rgb(55, 55, 104);
+      height: 28px;
+      position: relative;
+      right: 15px;
+    }
+
+    .a3>a {
+      text-decoration: none;
+      text-transform: none;
+      color: white;
+      padding: 20px;
+      position: relative;
+      top: 4px;
+    }
+
+    .a4 {
+      position: relative;
+      right: 10px;
+    }
+
+    .a4>a {
+      text-decoration: none;
+      text-transform: none;
+      color: white;
+      padding: 20px;
+    }
+        
+    .a4:hover {
+      background-color: rgb(55, 55, 104);
+      height: 30px;
+      border-radius: 5px;
+    }
+        
+    .h4:hover {
+      font-weight: 700;
+      position: relative;
+      top: 5px;
+    }
+
+    .a5 {
+      position: relative;
+      right: 5px;
+    }
+
+    .a5>a {
+      text-decoration: none;
+      text-transform: none;
+      color: white;
+      padding: 20px;
+    }
+        
+    .a5:hover {
+      background-color: rgb(55, 55, 104);
+      height: 30px;
+      border-radius: 5px;
+    }
+        
+    .h5:hover {
+      font-weight: 700;
+      position: relative;
+      top: 5px;
+    }
+
+    .calculator {
+      width: 300px;
+      margin: auto;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      justify-content: center;
+    }
+          
+    #display {
+      width: 100%;
+      padding: 10px;
+      font-size: 18px;
+    }
+          
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 5px;
+    }
+          
+    button {
+      width: 100%;
+      padding: 10px;
+      font-size: 18px;
+      cursor: pointer;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="Ateam">
+    <nav class="navigasi">
+
+            <h2><b><a href="index.html">DhicaAP</a></b></h2>
+
+        <ul class="bar">
+          <li class="a1"><a class="h1" href="index.html">HOME</a></li>
+          <li class="a2"><a class="h2" href="menu2.html">TEAM</a></li>
+          <li class="a3"><a class="h3" href="menu3.html">HISTORY</a></li>
+          <li class="a4"><a class="h4" href="menu4.html">ACHIEVEMENT</a></li>
+          <li class="a5"><a class="h5" href="menu5.html">CONTACT</a></li>
+        </ul>
+    </nav>
+        <div class="calculator">
+            <input type="text" id="display" readonly>
+            <div class="buttons">
+                <button onclick="clearDisplay()">C</button>
+                <button onclick="appendToDisplay('/')">/</button>
+                <button onclick="appendToDisplay('*')">*</button>
+                <button onclick="appendToDisplay('7')">7</button>
+                <button onclick="appendToDisplay('8')">8</button>
+                <button onclick="appendToDisplay('9')">9</button>
+                <button onclick="appendToDisplay('-')">-</button>
+                <button onclick="appendToDisplay('4')">4</button>
+                <button onclick="appendToDisplay('5')">5</button>
+                <button onclick="appendToDisplay('6')">6</button>
+                <button onclick="appendToDisplay('+')">+</button>
+                <button onclick="appendToDisplay('1')">1</button>
+                <button onclick="appendToDisplay('2')">2</button>
+                <button onclick="appendToDisplay('3')">3</button>
+                <button onclick="calculate()">=</button>
+                <button onclick="appendToDisplay('0')">0</button>
+                <button onclick="appendToDisplay('.')">.</button>
+            </div>
+        </div>
+
+        <script>
+          let displayValue = '';
+
+          function appendToDisplay(value) {
+              displayValue += value;
+              document.getElementById('display').value = displayValue;
+          }
+          
+          function clearDisplay() {
+              displayValue = '';
+              document.getElementById('display').value = displayValue;
+          }
+          
+          function calculate() {
+              try {
+                  displayValue = eval(displayValue);
+                  document.getElementById('display').value = displayValue;
+              } catch (error) {
+                  document.getElementById('display').value = 'Error';
+              }
+          }
+        </script>
+    </body>
+</html>

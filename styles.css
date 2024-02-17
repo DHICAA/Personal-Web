@@ -1,0 +1,323 @@
+body {
+    background-color: rgb(16, 16, 17);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial;
+}
+
+.navbar>h2 {
+    color: crimson;
+    padding-left: 70px;
+    
+}
+
+.navbar>h2>b>a {
+    text-decoration: none;
+    list-style:none;
+    color: crimson;
+}
+
+.bar {
+    display: flex;
+    align-items: center;
+    color: white;
+    list-style: none;
+    position: relative;
+    right: 40px;
+}
+
+.a1 {
+    background-color: rgb(55, 55, 104);
+    height: 30px;
+    border-radius: 5px;
+    position: relative;
+    right: 25px;
+}
+
+.a1>a {
+    text-decoration: none;
+    text-transform: none;
+    color: white;
+    padding: 20px;
+    position: relative;
+    top: 6px;
+}
+
+.a2 {
+    position: relative;
+    right: 20px;
+}
+
+.a2>a {
+    text-decoration: none;
+    text-transform: none;
+    color: white;
+    padding: 20px;
+}
+
+.a2:hover {
+        background-color: rgb(55, 55, 104);
+        height: 30px;
+        border-radius: 5px;
+}
+
+.h2:hover {
+    font-weight: 700;
+    position: relative;
+    top: 5px;
+}
+
+.a3 {
+    position: relative;
+    right: 15px;
+}
+
+.a3>a {
+    text-decoration: none;
+    text-transform: none;
+    color: white;
+    padding: 20px;
+}
+
+.a3:hover {
+    background-color: rgb(55, 55, 104);
+    height: 30px;
+    border-radius: 5px;
+}
+
+.h3:hover {
+font-weight: 700;
+position: relative;
+top: 5px;
+}
+
+.a4 {
+    position: relative;
+    right: 10px;
+}
+
+.a4>a {
+    text-decoration: none;
+    text-transform: none;
+    color: white;
+    padding: 20px;
+}
+
+.a4:hover {
+    background-color: rgb(55, 55, 104);
+    height: 30px;
+    border-radius: 5px;
+}
+
+.h4:hover {
+font-weight: 700;
+position: relative;
+top: 5px;
+}
+
+.a5 {
+    position: relative;
+    right: 5px;
+}
+
+.a5>a {
+    text-decoration: none;
+    text-transform: none;
+    color: white;
+    padding: 20px;
+}
+
+.a5:hover {
+    background-color: rgb(55, 55, 104);
+    height: 30px;
+    border-radius: 5px;
+}
+
+.h5:hover {
+font-weight: 700;
+position: relative;
+top: 5px;
+}
+
+.Bcont {
+    padding-top: 100px;
+    font-family: Arial;
+    padding-left: 70px;
+    position: relative;
+    top: -25px;
+}
+
+.Bcont>h6 {
+    color: crimson;
+    font-size: large;
+    position: relative;
+    top: 25px;
+}
+
+.Bcont>h3 {
+    color: white;
+    font-size: xx-large;
+}
+
+.Bcont>p {
+    color: white;
+    width: 600px;
+    position: relative;
+    top: -15px;
+}
+
+.sosmed {
+    display: flex;
+    position: relative;
+    left: -11px;
+    top: -20px;
+}
+
+.sosmed>a>img {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    padding: 15px;
+    background-color: white;
+}
+
+center {
+    color: white;
+    font-size: xx-large;
+    font-weight: 1000;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-top: 100px;
+}
+
+.CcontA {
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 100px;
+}
+
+.html {
+    background-color: white;
+    width: 30%;
+    height: 300px;
+    border-radius: 4px;
+}
+.html>img {
+    width: 200px;
+    height: 200px;
+    float: left;
+    padding-top: 50px;
+}
+.html>h5 {
+    font-weight: 700;
+    font-size: larger;
+    position: relative;
+    top: 100px;
+    left: 50px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.css {
+    background-color: white;
+    width: 30%;
+    height: 300px;
+    position: relative;
+    left: 25px;
+    border-radius: 4px;
+}
+.css>img {
+    width: 200px;
+    height: 200px;
+    float: left;
+    padding-top: 50px;
+}
+.css>h5 {
+    font-weight: 700;
+    font-size: larger;
+    position: relative;
+    top: 100px;
+    left: 50px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.javascript {
+    background-color: white;
+    width: 30%;
+    height: 300px;
+    position: relative;
+    left: 50px;
+    border-radius: 4px;
+}
+.javascript>img {
+    width: 200px;
+    height: 200px;
+    float: left;
+    padding-top: 50px;
+    padding-left: 15px;
+}
+.javascript>h5 {
+    font-weight: 700;
+    font-size: larger;
+    position: relative;
+    top: 100px;
+    left: 25px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.CcontB {
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 25px;
+}
+
+.cpp {
+    background-color: white;
+    width: 30%;
+    height: 300px;
+    border-radius: 4px;
+}
+.cpp>img {
+    width: 180px;
+    height: 200px;
+    float: left;
+    padding-top: 50px;
+    padding-left: 15px;
+}
+.cpp>h5 {
+    font-weight: 700;
+    font-size: larger;
+    position: relative;
+    top: 120px;
+    left: 50px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.python {
+    background-color: white;
+    width: 30%;
+    height: 300px;
+    position: relative;
+    left: 25px;
+    border-radius: 4px;
+}
+.python>img {
+    width: 200px;
+    height: 200px;
+    float: left;
+    padding-top: 50px;
+    padding-left: 15px;
+}
+.python>h5 {
+    font-weight: 700;
+    font-size: larger;
+    position: relative;
+    top: 100px;
+    left: 25px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
